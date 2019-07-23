@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elimei">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_INTENT_SENDER_INTENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.elimei.elimei.TestResultActivity" />
+        <activity android:name="com.elimei.elimei.MemberActivity" />
+        <activity android:name="com.elimei.elimei.MemberDetail" />
+        <activity android:name="com.elimei.elimei.TestActivity" />
+        <activity
+            android:name="com.elimei.elimei.ELiMeiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name="com.elimei.elimei.service.MessageService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.elimei.elimei.VideoPalyerActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.ASActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.MemberHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.LiuYanBanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.WiFiSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.HuFuJieMianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.TuiJianChanPing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.ChanPingAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.EquipmentDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.SoftWareUsesBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.FAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.SoftWard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.HardWareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.elimei.elimei.VideoActivity"
+            android:screenOrientation="landscape" />
+    </application>
+</manifest>

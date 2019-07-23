@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="初始名称"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/chushi"
+            android:layout_width="216dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/setting_ssid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/setting_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="账号重置"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/wifi_ssid"
+                android:layout_width="216dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/graybian1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#888888"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="167dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="#898989"
+            android:text="OK"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>

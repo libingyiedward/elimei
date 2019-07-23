@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/btn_home_normal"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/btn_vip_normal"
+            android:title="会员测试/结果管理" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/btn_outsider_normal"
+            android:title="非会员测试" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/btn_sdmenu_normal"
+            android:title="A/s" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/btn_setup_normal"
+            android:title="设置 " />
+    </group>
+</menu>

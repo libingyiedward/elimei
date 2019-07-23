@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/zonghec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="layout/item_zonghe_0">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.elimei.elimei.charts.RadarChart
+                    android:id="@+id/radarchat"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"></com.elimei.elimei.charts.RadarChart>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/biaochi" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="238dp"
+                android:background="#f8f8f8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您的护肤指数:"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/start_uncheck" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/start_uncheck" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/start_uncheck" />
+
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/start_uncheck" />
+
+                    <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/start_uncheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="63dp"
+                        android:background="@drawable/back2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="综合分值"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/fenshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="6.5分"
+                            android:textColor="#ff9b00"
+                            android:textSize="19dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ageall"
+                        android:layout_width="117dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/back2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="肌肤年龄"
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="23岁"
+                            android:textColor="#ff9b00"
+                            android:textSize="19dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="护肤建议："
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="(点击下面单项即可进入护肤建议详情)"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/shuifen"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="水分"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/youzhi"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="油脂"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/wenli"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="纹理"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/zhouwen"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="皱纹"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/fuse"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="肤色"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/sesu"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="色素"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/mingan"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="疲劳"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/maokong"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/backgreen"
+                            android:gravity="center"
+                            android:onClick="onTJClick"
+                            android:text="毛孔"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/hufu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:autoLink="all"
+                        android:lineSpacingExtra="20dp"
+                        android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。  "
+                        android:textColor="#ff9b00"
+                        android:textColorLink="#000" />
+
+                    <TextView
+                        android:id="@+id/hufu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:autoLink="all"
+                        android:lineSpacingExtra="20dp"
+                        android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。  "
+                        android:textColor="#000000"
+                        android:textColorLink="#000" />
+
+
+                </FrameLayout>
+
+                <!--<ImageView-->
+                <!--android:scaleType="fitStart"-->
+                <!--android:src="@drawable/zonghejianyi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/btn_again_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="再次测试"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tuijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_recommend_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产品推荐"
+                            android:textColor="#000" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    testCompile 'junit:junit:4.12'
+//    compile 'com.android.support:appcompat-v7:22+'
+//    compile 'com.android.support:support-v4:22+'
+//    compile 'com.zhy:okhttputils:2.6.2'
+//    compile 'com.google.code.gson:gson:2.2.4'
+//    compile 'com.github.bumptech.glide:glide:3.8.0'
+//    compile files('libs/SmarpCamLib.jar')
+//    compile files('libs/ToneLib.jar')
+//    compile files('libs/xcl-charts.jar')
+//    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+//    compile 'com.android.support:recyclerview-v7:22+'
+//    compile 'com.android.support:design:22+'
+    compile('com.android.support:appcompat-v7:22+')
+    compile('com.android.support:support-v4:22+')
+    testCompile 'junit:junit:4.12'
+    compile('com.zhy:okhttputils:2.6.2') { transitive = true }
+    compile('com.google.code.gson:gson:2.2.4') { transitive = true }
+    compile('com.github.bumptech.glide:glide:3.8.0') { transitive = true }
+    compile files('libs/SmarpCamLib.jar')
+    compile files('libs/ToneLib.jar')
+    compile files('libs/xcl-charts.jar')
+    compile('com.squareup.okhttp3:okhttp:3.10.0') { transitive = true }
+    compile('com.android.support:recyclerview-v7:22+') { transitive = true }
+    compile('com.android.support:design:22+') { transitive = true }
+}
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        def mavenDirPath = file('～/Downloads/maven') // 本地存放目录(自行选择)，可放在gradle.properties文件中引用
+//        repository(url:"file://${mavenDirPath.absolutePath}") // 必须双引号，单引号不会转义$
+//        pom.project {
+//            groupId "com.elimei.elimei" // 可以随意取，一般取包名
+//            artifactId "meaventest" // 可以随意取，一般取库的名字
+//            version "1.0.0" // 版本号
+//        }
+//    }
+//}
+

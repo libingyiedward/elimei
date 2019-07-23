@@ -1,0 +1,1165 @@
+<layout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:tag="layout/activity_testresult_0"
+        tools:context="com.zhinengmensuo.elimeilibrary.TestResultActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titlebarhight"
+                android:background="#f8f8f8">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@drawable/nav_return_normal" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="历史记录"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/baike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/baike" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="护肤百科"-->
+                    <!--android:textSize="9dp" />-->
+
+                    <ImageView
+                        android:id="@+id/finsh"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/nav_home_normal" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="90dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/shuifenl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/shuifeni"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_waterl" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/shuifen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="水分"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/y1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/y1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_oi" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/y1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="油脂"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/w1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/w1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_rough" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/w1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="纹理"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/z1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/z1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_wrinkle" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/z1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="皱纹"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/f1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/f1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_whitening" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/f1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="肤色"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/s1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_pigment" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/s1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="色素"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/m1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/m1l"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_sensitivex" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/m1t"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="疲劳"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/mk"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_high"
+                        android:gravity="center_horizontal"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/mkl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/btn_pore" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mkt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="毛孔"
+                            android:textColor="#000"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/zh"
+                        android:layout_width="match_parent"
+                        android:layout_height="129dp"
+                        android:gravity="center"
+                        android:onClick="onViewClicked"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/zhi"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/btn_comprehensive_detection_normal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_bg"
+                android:padding="11dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:tag="binding_1">
+
+                        <LinearLayout
+                            android:id="@+id/main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/ceshi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/ceshizhi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/cankao"
+                                        android:gravity="right|center_vertical"
+                                        android:paddingRight="15dp"
+                                        android:text=" "
+                                        android:textColor="#fff" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="测试值"
+                                    android:textColor="#000000"
+                                    android:textSize="13dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/cankao"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <!--<TextView-->
+                                    <!--android:id="@+id/cankaozhi"-->
+                                    <!--android:layout_width="70dp"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:background="@drawable/shuzhi"-->
+                                    <!--android:gravity="right|center_vertical"-->
+                                    <!--android:paddingRight="15dp"-->
+                                    <!--android:text="2.8"-->
+                                    <!--android:textColor="#fff" />-->
+
+                                    <ImageView
+                                        android:id="@+id/cankaoimg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/ckfuse" />
+
+
+                                    <!--<RelativeLayout-->
+                                    <!--android:id="@+id/xianshi2"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:background="@drawable/shuzhi"-->
+                                    <!--android:orientation="horizontal"-->
+                                    <!--android:visibility="gone">-->
+
+                                    <!--<TextView-->
+                                    <!--android:id="@+id/from1"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_alignParentLeft="true"-->
+                                    <!--android:layout_centerVertical="true"-->
+                                    <!--android:layout_marginLeft="10dp"-->
+                                    <!--android:textColor="#fff" />-->
+
+                                    <!--<TextView-->
+                                    <!--android:id="@+id/to1"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_alignParentRight="true"-->
+                                    <!--android:layout_centerVertical="true"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginRight="10dp"-->
+                                    <!--android:textColor="#fff" />-->
+
+                                    <!--</RelativeLayout>-->
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="参考值"
+                                    android:textColor="#000000"
+                                    android:textSize="13dp" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:scaleType="fitStart"
+                                android:src="@drawable/hahah" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/result"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="     "
+                                    android:textColor="#000"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/no1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/result"
+                                    android:layout_marginTop="14dp"
+                                    android:text="适合产品："
+                                    android:textColor="#000" />
+
+                                <TextView
+                                    android:id="@+id/chanpin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/no1"
+                                    android:layout_marginTop="14dp"
+                                    android:text="荟馨纯净芦荟护肤系列"
+                                    android:textColor="#000"
+                                    android:textSize="9dp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="92dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="15dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <android.support.v4.view.ViewPager
+                                        android:id="@+id/viewapgere"
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+
+                                        android:background="@drawable/img_pho_selected" />
+
+                                    <LinearLayout
+                                        android:id="@+id/container"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="7dp"
+                                        android:orientation="horizontal"></LinearLayout>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="16dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/jianakng"
+                                        android:layout_width="117dp"
+                                        android:layout_height="75dp"
+                                        android:src="@drawable/circle" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="健康皮肤"
+                                        android:textColor="#000" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/jiance"
+                                        android:layout_width="117dp"
+                                        android:layout_height="75dp"
+                                        android:src="@drawable/circle" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="检测皮肤"
+                                        android:textColor="#000" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="15dp"
+                                android:text="肌肤问题："
+                                android:textColor="#000" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/wenti"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:autoLink="all"
+                                    android:lineSpacingExtra="10dp"
+                                    android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。"
+                                    android:textColor="#FF9B00"
+                                    android:textColorLink="#FF9B00"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:id="@+id/wenti1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:autoLink="all"
+                                    android:lineSpacingExtra="10dp"
+                                    android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。"
+                                    android:textColor="#000"
+                                    android:textColorLink="#000"
+                                    android:textSize="11dp"
+                                    android:visibility="visible" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="15dp"
+                                android:text="护肤建议："
+                                android:textColor="#000" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/hufuzc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:autoLink="all"
+                                    android:lineSpacingExtra="10dp"
+                                    android:text="1.建议用些柔和型的护肤品，增强皮肤锻炼，经常用冷水洗脸，增加皮肤的耐受力。"
+                                    android:textColor="#ff9b00"
+                                    android:textColorLink="#ff9b00"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:id="@+id/hufu1zc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:autoLink="all"
+                                    android:lineSpacingExtra="10dp"
+                                    android:text="1.建议用些柔和型的护肤品，增强皮肤锻炼，经常用冷水洗脸，增加皮肤的耐受力。"
+                                    android:textColor="#000000"
+                                    android:textColorLink="#000"
+                                    android:textSize="11dp" />
+
+                            </FrameLayout>
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/jiesao"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="300dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:scaleType="fitStart"-->
+                            <!--android:src="@drawable/problem" />-->
+                        </LinearLayout>
+
+                        <!--<include-->
+                        <!--android:id="@+id/zonghe"-->
+                        <!--layout="@layout/item_zonghe"-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:visibility="gone" />-->
+
+
+                        <LinearLayout
+                            android:id="@+id/zonghe"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:tag="layout/item_zonghe_0"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.elimei.elimei.charts.RadarChart
+                                        android:id="@+id/radarchat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="250dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="18dp"></com.elimei.elimei.charts.RadarChart>
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:src="@drawable/biaochi" />
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="238dp"
+                                    android:background="#f8f8f8"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="您的护肤指数:"
+                                            android:textColor="#000"
+                                            android:textSize="15dp" />
+
+                                        <ImageView
+                                            android:id="@+id/star1"
+                                            android:layout_width="16dp"
+                                            android:layout_height="16dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:src="@drawable/start_uncheck" />
+
+                                        <ImageView
+                                            android:id="@+id/star2"
+                                            android:layout_width="16dp"
+                                            android:layout_height="16dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:src="@drawable/start_uncheck" />
+
+                                        <ImageView
+                                            android:id="@+id/star3"
+                                            android:layout_width="16dp"
+                                            android:layout_height="16dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:src="@drawable/start_uncheck" />
+
+                                        <ImageView
+                                            android:id="@+id/star4"
+                                            android:layout_width="16dp"
+                                            android:layout_height="16dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:src="@drawable/start_uncheck" />
+
+                                        <ImageView
+                                            android:id="@+id/star5"
+                                            android:layout_width="16dp"
+                                            android:layout_height="16dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:src="@drawable/start_uncheck" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="117dp"
+                                            android:layout_height="63dp"
+                                            android:background="@drawable/back2"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="综合分值"
+                                                android:textColor="#000000"
+                                                android:textSize="12dp" />
+
+                                            <TextView
+                                                android:id="@+id/fenshu"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:text="6.5分"
+                                                android:textColor="#ff9b00"
+                                                android:textSize="19dp" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:id="@+id/ageall"
+                                            android:layout_width="117dp"
+                                            android:layout_height="63dp"
+                                            android:layout_marginLeft="3dp"
+                                            android:background="@drawable/back2"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="肌肤年龄"
+                                                android:textColor="#000000"
+                                                android:textSize="12dp" />
+
+                                            <TextView
+                                                android:id="@+id/age"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:text="23岁"
+                                                android:textColor="#ff9b00"
+                                                android:textSize="19dp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="15dp"
+                                        android:text="护肤建议："
+                                        android:textColor="#000"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="(点击下面单项即可进入护肤建议详情)"
+                                        android:textSize="12dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/shuifent"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="水分"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/youzhi"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="油脂"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/wenli"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="纹理"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/zhouwen"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="皱纹"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/fuse"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="肤色"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/sesu"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="色素"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/mingan"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="疲劳"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/maokong"
+                                                android:layout_width="50dp"
+                                                android:layout_height="20dp"
+                                                android:background="@drawable/backgreen"
+                                                android:gravity="center"
+                                                android:onClick="onTJClick"
+                                                android:text="毛孔"
+                                                android:textColor="#000"
+                                                android:textSize="12dp" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/hufu"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="20dp"
+                                            android:autoLink="all"
+                                            android:lineSpacingExtra="20dp"
+                                            android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。  "
+                                            android:textColor="#ff9b00"
+                                            android:textColorLink="#000" />
+
+                                        <TextView
+                                            android:id="@+id/hufu1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="20dp"
+                                            android:autoLink="all"
+                                            android:lineSpacingExtra="20dp"
+                                            android:text="1.由皮肤敏感或炎症导致毛细血管充血，皮肤发红，多与内分泌和过敏有关。  "
+                                            android:textColor="#000000"
+                                            android:textColorLink="#000" />
+
+
+                                    </FrameLayout>
+
+                                    <!--<ImageView-->
+                                    <!--android:scaleType="fitStart"-->
+                                    <!--android:src="@drawable/zonghejianyi"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="150dp" />-->
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="20dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:id="@+id/again"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:layout_width="25dp"
+                                                android:layout_height="25dp"
+                                                android:src="@drawable/btn_again_normal" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="20dp"
+                                                android:text="再次测试"
+                                                android:textColor="#000"
+                                                android:textSize="10dp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/tuijian"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="70dp"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="gone">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/btn_recommend_normal" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="产品推荐"
+                                                android:textColor="#000" />
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

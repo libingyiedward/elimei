@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="layout/activity_chan_ping_acitivity_0"
+        tools:context="com.elimei.elimei.ChanPingAcitivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titlebarhight"
+                android:background="#f8f8f8">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@drawable/nav_return_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="产品推荐"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/nav_home_normal"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tj_back"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/tj1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/huise">
+
+                        <ImageView
+                            android:id="@+id/tuijian1"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tuijiant1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="asdf asd " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tj2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/huise">
+
+                        <ImageView
+                            android:id="@+id/tuijian2"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tuijiant2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="asdf asd " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tj3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/huise">
+
+                        <ImageView
+                            android:id="@+id/tuijian3"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tuijiant3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="asdf asd " />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        tools:context="com.elimei.elimei.LiuYanBanActivity" android:tag="layout/activity_liu_yan_ban_0">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titlebarhight"
+                android:background="#f8f8f8">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@drawable/nav_return_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="在线咨询"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/liuyan"
+            android:layout_width="329dp"
+            android:layout_height="411dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/graybian"
+            android:gravity="start"
+            android:hint="请描述一下问题"
+            android:padding="10dp"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="25dp"
+                android:src="@drawable/send" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:textColor="#000"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

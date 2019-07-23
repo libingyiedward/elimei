@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/amos/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.8.0/9bada650e1afe9c6174ddc0d113c1fce4dc26fe0/glide-3.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="9bada650e1afe9c6174ddc0d113c1fce4dc26fe0">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/glide-3.8.0_55b526c5a6103893d1887b58e843b7c6f692babf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_8740a2083e5948cc96be6d71aa4e8cfab297bbb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.zhy/okhttputils/2.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="155fef2600f48631a9e9665c0873743b6d24e324">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.zhy-okhttputils-2.6.2_49423b2ba3e7e91b3c9b7833fe3c9bc7a172cce1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/okhttp-3.10.0_02da9838cca665e2de635e2e74f1de167bf13fa6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_96b61531f8f13a4e58425540d2691846b62d4348.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/gson-2.2.4_cd15a0e20d66eba7ac563ebb43ae4c94562b8424.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/elimeisdk/elimei/unspecified/jars/libs/xcl-charts.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="9cfd6a4fa843deaffaf978646d8d69954cc235d1">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/xcl-charts_27964e1caa834d9bcc2716c49a5da53dc3eab6e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-22.2.1_454e0d500f8f76767f63ed16aaaa10a1e2ef5b78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/okio-1.14.0_44cd5db34a46934ed70756cbc14d667cc39d0a06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/elimeisdk/elimei/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="98f8557917cb30dd2aa617105156dd7c5b0dd029">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/elimeisdk-elimei-unspecified_85b87142f3202d0253a9d51fddad46dd4a79cbd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/elimeisdk/elimei/unspecified/jars/libs/ToneLib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="d9bb35c629b62036ffb0b72bf5209de82cd08925">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/ToneLib_6cc530065285b3cedb1a202e419244828bb89025.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.1_c9fe743243b965caed5f1fda168e0e8eff8c7929.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_b2f180365c501880003239cb22be87872259f851.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/elimeisdk/elimei/unspecified/jars/libs/SmarpCamLib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="24ea78b160997b591552c4c52ed57c1575fb0b9f">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/SmarpCamLib_1c2c9f87830b007858f37154941d5bd00f90d93a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_c6972c83f3ea67a03d29d9042cc3a05af1878731.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_bb69599f51ace6b74344512b9ce4c9ea81582ac3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.2/5e227e2d794cf680dd34fb04dd564ce58d6c764d/baseLibrary-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="5e227e2d794cf680dd34fb04dd564ce58d6c764d">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.2_00332126f444bdf706bc0a4c12c85dfbefc38ca6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amos/Downloads/elimeisdk/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/amos/Downloads/elimeisdk/app/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.1_afca2df78643e483a3013dd990f457dd30e5b4a4.jar" />
+    </item>
+
+</items>
